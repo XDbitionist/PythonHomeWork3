@@ -20,5 +20,5 @@ while True:
     except:
         print('Ошибка, это не число.')
 
-# new_list = [fib(i) for i in range(-k, k+1)]  # со списком разобрался
-# print(new_list)
+new_list = [fib(i) for i in range(-k, k+1)]  # со списком разобрался
+print(new_list)
