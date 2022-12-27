@@ -11,14 +11,15 @@ def fib(n):
     if n <= -1:
         return (((-1) ** ((abs(n)+1))) * fib(abs(n)))
 
-while True:
-    try:
-       k = int(input('\nВведите число: '))
-       for i in range(-k, k+1):
-            print(fib(i), end=', ')
+# while True:
+#     try:
+#        k = int(input('\nВведите число: '))
+#        for i in range(-k, k+1):
+#             print(fib(i), end=', ')
+#
+#     except:
+#         print('Ошибка, это не число.')
 
-    except:
-        print('Ошибка, это не число.')
-
+k = int(input('Введите число: '))
 new_list = [fib(i) for i in range(-k, k+1)]  # со списком разобрался
 print(new_list)
